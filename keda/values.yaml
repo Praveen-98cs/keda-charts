@@ -279,17 +279,13 @@ podSecurityContext:
   # @default -- [See below](#KEDA-is-secure-by-default)
   operator:
     runAsNonRoot: true
-    # runAsUser: 1000
-    # runAsGroup: 1000
-    # fsGroup: 1000
+    runAsUser: 10001
 
   # -- [Pod security context] of the KEDA metrics apiserver pod
   # @default -- [See below](#KEDA-is-secure-by-default)
   metricServer:
     runAsNonRoot: true
-    # runAsUser: 1000
-    # runAsGroup: 1000
-    # fsGroup: 1000
+    runAsUser: 10001
 
 service:
   type: ClusterIP
