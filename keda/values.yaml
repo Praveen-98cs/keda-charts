@@ -5,11 +5,11 @@ global:
 image:
   keda:
     registry: null
-    repository: ghcr.io/kedacore/keda
+    repository: choreoprivateacr.azurecr.io/kedacore/keda
     tag: ""
   metricsApiServer:
     registry: null
-    repository: ghcr.io/kedacore/keda-metrics-apiserver
+    repository: choreoprivateacr.azurecr.io/kedacore/keda-metrics-apiserver
     tag: ""
   # -- Image pullPolicy for all KEDA components
   pullPolicy: Always
